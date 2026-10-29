@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Maskable icon: safe zone is the inner 80% (central 409.6px) -->
+  <rect width="512" height="512" fill="#211B18"/>
+  <text x="256" y="220" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="48" font-weight="700" letter-spacing="8" fill="#D7B78B">THE</text>
+  <text x="256" y="310" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="6" fill="#F5F0E8">ARCHIVE</text>
+  <text x="352" y="310" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="68" font-weight="700" fill="#D7B78B">.</text>
+</svg>
+

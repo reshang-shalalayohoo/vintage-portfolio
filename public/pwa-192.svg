@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" rx="24" fill="#211B18"/>
+  <rect x="8" y="8" width="176" height="176" rx="20" fill="none" stroke="#D7B78B" stroke-width="2" opacity="0.3"/>
+  <text x="96" y="78" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#D7B78B">THE</text>
+  <text x="96" y="118" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="3" fill="#F5F0E8">ARCHIVE</text>
+  <text x="131" y="118" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#D7B78B">.</text>
+  <line x1="56" y1="132" x2="136" y2="132" stroke="#D7B78B" stroke-width="1.5" opacity="0.4"/>
+  <text x="96" y="152" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="600" letter-spacing="3" fill="#D7B78B" opacity="0.6">EST. 2026</text>
+</svg>
+
