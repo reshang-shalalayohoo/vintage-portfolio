@@ -29,21 +29,14 @@ export default function Hero() {
           <p className="hero-description">{siteConfig.description}</p>
           <div className="hero-buttons">
             <a href="#projects" className="btn btn-primary">
-              Explore My Works <span className="btn-arrow">→</span>
+              Explore My Works
             </a>
             <a href="#about" className="btn btn-secondary">
               Get to Know Me
             </a>
           </div>
 
-          {/* Creative-interest card — below the welcome content */}
-          <div className="hero-accent-card glass-2">
-            <p className="accent-card-label">Currently Exploring</p>
-            <p className="accent-card-value">Digital Art &amp; Realism</p>
-            <div className="accent-card-divider" />
-            <p className="accent-card-label">Crafting With</p>
-            <p className="accent-card-value">Code, Pencil &amp; Clay</p>
-          </div>
+
         </div>
       </div>
 

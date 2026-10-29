@@ -24,11 +24,11 @@ export default function Contact() {
 
   const buttonLabel =
     status === "sending" ? "Sending…"
-    : status === "sent" ? "✓ Message Sent!"
-    : "Send Message →";
+      : status === "sent" ? "✓ Message Sent!"
+        : "Send Message";
 
   return (
-    <section className="section" id="contact">
+    <section className="section section-contact" id="contact">
       <div className="section-inner">
         <div className="contact-grid">
           <div className="contact-info reveal">
@@ -45,12 +45,12 @@ export default function Contact() {
                   key={social.name}
                   href={social.url}
                   className="social-link glass-2"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={social.url.startsWith("mailto:") ? undefined : "_blank"}
+                  rel={social.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
                   aria-label={social.name}
                   title={social.name}
                 >
-                  <svg width="20" height="20"><use href={`/icons.svg#${social.icon}`} /></svg>
+                  <i className={social.uicon} aria-hidden="true" />
                 </a>
               ))}
             </div>

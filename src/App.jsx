@@ -1,5 +1,7 @@
-import { useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 
+import LoadingScreen from "./components/LoadingScreen";
+import Sparkles from "./components/Sparkles";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ScrollProgress from "./components/ScrollProgress";
@@ -23,8 +25,16 @@ function Ornament() {
 }
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  const handleLoadComplete = useCallback(() => {
+    setLoading(false);
+  }, []);
+
   // Scroll-reveal: observe .reveal elements
   useEffect(() => {
+    if (loading) return;
+
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
@@ -57,10 +67,11 @@ function App() {
       clearTimeout(timer);
       observer.disconnect();
     };
-  }, []);
+  }, [loading]);
 
   // Lazy image fade-in on load
   useEffect(() => {
+    if (loading) return;
     const images = document.querySelectorAll('img[loading="lazy"]');
     images.forEach((img) => {
       if (img.complete) {
@@ -69,34 +80,41 @@ function App() {
         img.addEventListener("load", () => img.classList.add("loaded"), { once: true });
       }
     });
-  }, []);
+  }, [loading]);
 
   return (
     <>
-      <ScrollProgress />
-      <Navbar />
-      <div className="film-grain" aria-hidden="true" />
+      <LoadingScreen onComplete={handleLoadComplete} />
 
-      <main>
-        <Hero />
-        <Ornament />
-        <About />
-        <Ornament />
-        <Skills />
-        <Ornament />
-        <Projects />
-        <Ornament />
-        <ArtGallery />
-        <Ornament />
-        <Experience />
-        <Ornament />
-        <CreativeProcess />
-        <Ornament />
-        <Contact />
-      </main>
+      {!loading && (
+        <>
+          <ScrollProgress />
+          <Navbar />
+          <Sparkles />
+          <div className="film-grain" aria-hidden="true" />
 
-      <Footer />
-      <BackToTop />
+          <main>
+            <Hero />
+            <Ornament />
+            <About />
+            <Ornament />
+            <Skills />
+            <Ornament />
+            <Projects />
+            <Ornament />
+            <ArtGallery />
+            <Ornament />
+            <Experience />
+            <Ornament />
+            <CreativeProcess />
+            <Ornament />
+            <Contact />
+          </main>
+
+          <Footer />
+          <BackToTop />
+        </>
+      )}
     </>
   );
 }

@@ -15,6 +15,7 @@ export default defineConfig({
         'pwa-512.svg',
         'pwa-maskable.svg',
         'images/vintage-background.jpg',
+        'images/sun-cursor.svg',
       ],
       manifest: {
         name: 'The Archive — Creative Portfolio',

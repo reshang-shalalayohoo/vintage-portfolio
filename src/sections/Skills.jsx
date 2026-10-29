@@ -4,7 +4,9 @@ import { skillsData } from "../data/portfolioData";
 function SkillItem({ skill }) {
   return (
     <div className="skill-item glass-2">
-      <div className="skill-icon">{skill.icon}</div>
+      <div className="skill-icon">
+        <i className={skill.icon} aria-hidden="true" />
+      </div>
       <div className="skill-info">
         <div className="skill-name">{skill.name}</div>
         <div className="skill-bar-track">
@@ -20,7 +22,7 @@ function SkillItem({ skill }) {
 
 export default function Skills() {
   return (
-    <section className="section" id="skills">
+    <section className="section section-skills" id="skills">
       <div className="section-inner">
         <SectionHeading
           label="✦ EXPERTISE ✦"

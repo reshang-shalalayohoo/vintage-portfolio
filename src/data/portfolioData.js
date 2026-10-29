@@ -3,26 +3,25 @@
 // ============================================
 
 export const siteConfig = {
-  brand: "THE ARCHIVE",
-  heroHeading: "Welcome to My Portfolio.",
-  heroName: "I'm Reshallyn Mortel.",
+  brand: "雷默",
+  heroHeading: "Welcome to My Portfolio",
+  heroName: "I'm Reshallyn Mortel",
   heroSubtitle: "Creative Artist • Designer • Developer",
   description:
     "Welcome to my creative space, where art, design, and technology come together. Discover my artworks, digital projects, creative experiments, and the stories behind them.",
-  eyebrow: "✦ A PERSONAL CREATIVE ARCHIVE ✦",
-  footerTagline: "ARTISTRY • DESIGN • INNOVATION",
+
   established: "EST. 2026",
 };
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Experience", href: "#experience" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "#home", icon: "fi fi-rr-home" },
+  { label: "About", href: "#about", icon: "fi fi-rr-user" },
+  { label: "Skills", href: "#skills", icon: "fi fi-rr-star" },
+  { label: "Projects", href: "#projects", icon: "fi fi-rr-layers" },
+  { label: "Gallery", href: "#gallery", icon: "fi fi-rr-picture" },
+  { label: "Experience", href: "#experience", icon: "fi fi-rr-briefcase" },
+  { label: "Process", href: "#process", icon: "fi fi-rr-bulb" },
+  { label: "Contact", href: "#contact", icon: "fi fi-rr-envelope" },
 ];
 
 export const aboutData = {
@@ -34,32 +33,32 @@ export const aboutData = {
     "This archive is my personal creative space — a place to share my journey, experiments, and the stories behind each piece.",
   ],
   interests: [
-    { label: "Digital Art", icon: "🎨" },
-    { label: "Traditional Drawing", icon: "✏️" },
-    { label: "Sculpting", icon: "🗿" },
-    { label: "Crafting", icon: "✂️" },
-    { label: "Realism", icon: "👁️" },
-    { label: "Semi-Realism", icon: "🖌️" },
+    { label: "Digital Art", icon: "fi fi-rr-palette" },
+    { label: "Traditional Drawing", icon: "fi fi-rr-pencil" },
+    { label: "Sculpting", icon: "fi fi-rr-cube" },
+    { label: "Crafting", icon: "fi fi-rr-scissors" },
+    { label: "Realism", icon: "fi fi-rr-eye" },
+    { label: "Semi-Realism", icon: "fi fi-rr-paint-brush" },
   ],
   portrait: "/images/portrait-placeholder.jpg",
 };
 
 export const skillsData = {
   creative: [
-    { name: "Digital Art", icon: "🎨", level: 85 },
-    { name: "Traditional Drawing", icon: "✏️", level: 90 },
-    { name: "Sculpting", icon: "🗿", level: 75 },
-    { name: "Crafting", icon: "✂️", level: 80 },
-    { name: "Realism", icon: "👁️", level: 82 },
-    { name: "Semi-Realism", icon: "🖌️", level: 88 },
+    { name: "Digital Art", icon: "fi fi-rr-palette", level: 85 },
+    { name: "Traditional Drawing", icon: "fi fi-rr-pencil", level: 90 },
+    { name: "Sculpting", icon: "fi fi-rr-cube", level: 75 },
+    { name: "Crafting", icon: "fi fi-rr-scissors", level: 80 },
+    { name: "Realism", icon: "fi fi-rr-eye", level: 82 },
+    { name: "Semi-Realism", icon: "fi fi-rr-paint-brush", level: 88 },
   ],
   technical: [
-    { name: "HTML", icon: "📄", level: 90 },
-    { name: "CSS", icon: "🎭", level: 88 },
-    { name: "JavaScript", icon: "📜", level: 82 },
-    { name: "React", icon: "⚛️", level: 78 },
-    { name: "Java 21", icon: "☕", level: 75 },
-    { name: "UI/UX Design", icon: "🖼️", level: 80 },
+    { name: "HTML", icon: "fi fi-rr-code", level: 90 },
+    { name: "CSS", icon: "fi fi-rr-layout-fluid", level: 88 },
+    { name: "JavaScript", icon: "fi fi-rr-globe", level: 82 },
+    { name: "React", icon: "fi fi-rr-rocket", level: 78 },
+    { name: "Java 21", icon: "fi fi-rr-coffee", level: 75 },
+    { name: "UI/UX Design", icon: "fi fi-rr-picture", level: 80 },
   ],
 };
 
@@ -139,6 +138,7 @@ export const experienceData = [
     company: "Your School / University",
     description: "Add your current education details here — degree, major, relevant coursework, or academic achievements.",
     type: "education",
+    icon: "fi fi-rr-graduation-cap",
   },
   {
     year: "2024",
@@ -146,6 +146,7 @@ export const experienceData = [
     company: "Platform / Institution",
     description: "Add any certifications, online courses, workshops, or training programs you've completed.",
     type: "certification",
+    icon: "fi fi-rr-diploma",
   },
   {
     year: "2023",
@@ -153,6 +154,7 @@ export const experienceData = [
     company: "Organization / Self-Directed",
     description: "Add internships, volunteer work, freelance projects, school projects, or any relevant creative experience.",
     type: "experience",
+    icon: "fi fi-rr-briefcase",
   },
   {
     year: "2022",
@@ -160,15 +162,16 @@ export const experienceData = [
     company: "Context",
     description: "Add competitions, exhibitions, published work, awards, or other noteworthy achievements.",
     type: "achievement",
+    icon: "fi fi-rr-trophy",
   },
 ];
 
 export const processSteps = [
-  { step: "01", title: "Inspiration", description: "Every creation begins with a spark — a reference photo, a feeling, a story, or a concept that captures my imagination.", icon: "💡" },
-  { step: "02", title: "Sketching", description: "Rough sketches and thumbnails help me explore compositions, proportions, and ideas before committing to details.", icon: "✏️" },
-  { step: "03", title: "Drafting", description: "Refining the sketch into a cleaner draft — establishing linework, structure, values, and the foundation for the final piece.", icon: "📐" },
-  { step: "04", title: "Rendering", description: "Adding color, shading, texture, and depth — whether digitally or with traditional media — to bring the piece to life.", icon: "🎨" },
-  { step: "05", title: "Final Touches", description: "Polishing details, adjusting contrasts, and making final refinements until the piece feels complete and ready to share.", icon: "✨" },
+  { step: "01", title: "Inspiration", description: "Every creation begins with a spark — a reference photo, a feeling, a story, or a concept that captures my imagination.", icon: "fi fi-rr-lightbulb" },
+  { step: "02", title: "Sketching", description: "Rough sketches and thumbnails help me explore compositions, proportions, and ideas before committing to details.", icon: "fi fi-rr-pencil" },
+  { step: "03", title: "Drafting", description: "Refining the sketch into a cleaner draft — establishing linework, structure, values, and the foundation for the final piece.", icon: "fi fi-rr-marker" },
+  { step: "04", title: "Rendering", description: "Adding color, shading, texture, and depth — whether digitally or with traditional media — to bring the piece to life.", icon: "fi fi-rr-palette" },
+  { step: "05", title: "Final Touches", description: "Polishing details, adjusting contrasts, and making final refinements until the piece feels complete and ready to share.", icon: "fi fi-rr-star" },
 ];
 
 // ============================================
@@ -177,8 +180,8 @@ export const processSteps = [
 // Use mailto: for email. Leave as placeholders until ready.
 // ============================================
 export const socialLinks = [
-  { name: "Instagram", url: "https://instagram.com", icon: "instagram-icon" },
-  { name: "Facebook", url: "https://facebook.com", icon: "facebook-icon" },
-  { name: "Email", url: "mailto:your-email@example.com", icon: "email-icon" },
-  { name: "GitHub", url: "https://github.com", icon: "github-icon" },
+  { name: "Instagram", url: "https://www.instagram.com/aniwata_/", icon: "instagram-icon", uicon: "fi fi-brands-instagram" },
+  { name: "Facebook", url: "https://www.facebook.com/aniwatashang", icon: "facebook-icon", uicon: "fi fi-brands-facebook" },
+  { name: "Email", url: "reshangmortel@gmail.com", icon: "email-icon", uicon: "fi fi-rr-envelope" },
+  { name: "GitHub", url: "https://github.com/reshang-shalalayohoo", icon: "github-icon", uicon: "fi fi-brands-github" },
 ];

@@ -1,11 +1,9 @@
 import SectionHeading from "../components/SectionHeading";
 import { experienceData } from "../data/portfolioData";
 
-const typeIcons = { education: "🎓", certification: "📜", experience: "💼", achievement: "🏆" };
-
 export default function Experience() {
   return (
-    <section className="section" id="experience">
+    <section className="section section-experience" id="experience">
       <div className="section-inner">
         <SectionHeading
           label="✦ JOURNEY ✦"
@@ -16,7 +14,7 @@ export default function Experience() {
           {experienceData.map((item, i) => (
             <div key={i} className="timeline-item reveal">
               <div className="timeline-dot">
-                <span>{typeIcons[item.type] || "✦"}</span>
+                <i className={item.icon} aria-hidden="true" />
               </div>
               <div className="timeline-card glass-2">
                 <div className="timeline-card-header">

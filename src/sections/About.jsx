@@ -3,7 +3,7 @@ import { aboutData } from "../data/portfolioData";
 
 export default function About() {
   return (
-    <section className="section" id="about">
+    <section className="section section-about" id="about">
       <div className="section-inner">
         <div className="about-grid">
           <div className="about-text">
@@ -20,7 +20,7 @@ export default function About() {
               <div className="about-interests-grid">
                 {aboutData.interests.map((item) => (
                   <div key={item.label} className="interest-chip glass-2">
-                    <span className="interest-icon">{item.icon}</span>
+                    <i className={`interest-icon ${item.icon}`} aria-hidden="true" />
                     <span className="interest-label">{item.label}</span>
                   </div>
                 ))}

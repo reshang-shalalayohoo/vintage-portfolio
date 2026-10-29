@@ -10,7 +10,7 @@ export default function ArtGallery() {
   const filtered = filter === "all" ? galleryData : galleryData.filter((g) => g.category === filter);
 
   return (
-    <section className="section" id="gallery">
+    <section className="section section-gallery" id="gallery">
       <div className="section-inner">
         <SectionHeading
           label="✦ GALLERY ✦"

@@ -12,13 +12,22 @@ export default function Footer() {
         </div>
         <div className="footer-socials">
           {socialLinks.map((social) => (
-            <a key={social.name} href={social.url} className="footer-social-link" target="_blank" rel="noopener noreferrer" aria-label={social.name}>
-              <svg width="16" height="16"><use href={`/icons.svg#${social.icon}`} /></svg>
+            <a
+              key={social.name}
+              href={social.url}
+              className="footer-social-link"
+              target={social.url.startsWith("mailto:") ? undefined : "_blank"}
+              rel={social.url.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+              aria-label={social.name}
+              title={social.name}
+            >
+              <i className={social.uicon} aria-hidden="true" />
             </a>
           ))}
         </div>
         <span className="footer-copy">© {year} {siteConfig.brand}. All rights reserved.</span>
       </div>
+
     </footer>
   );
 }
